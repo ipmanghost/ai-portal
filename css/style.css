@@ -1,0 +1,68 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f1a;
+    color: white;
+    text-align: center;
+}
+
+.background-animation {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #00f2ff, #000);
+    animation: moveBG 15s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes moveBG {
+    from { transform: translate(-10%, -10%) scale(1); }
+    to { transform: translate(10%, 10%) scale(1.2); }
+}
+
+.auth-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 0 40px #00f2ff;
+}
+
+.hidden {
+    display: none;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #00f2ff;
+    cursor: pointer;
+}
+
+.google-btn {
+    background: white;
+    color: black;
+}
+
+.link {
+    cursor: pointer;
+    color: #00f2ff;
+}
+
+.tools-grid div {
+    background: rgba(255,255,255,0.1);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+}
