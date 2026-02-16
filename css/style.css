@@ -66,3 +66,13 @@ button {
     display: inline-block;
     width: 200px;
 }
+.link {
+    cursor: pointer;
+    color: #00f2ff;
+    margin-top: 10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
